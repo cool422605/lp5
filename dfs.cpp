@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 #include <omp.h>
 using namespace std;
+
+// to run the current
+// g++ -fopenmp dfs.cpp
+// ./a.out
+
 class Graph {
 public:
   map<int, bool> visited;

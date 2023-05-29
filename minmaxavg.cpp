@@ -3,6 +3,12 @@
 #include <climits>
 #include <omp.h>
 using namespace std;
+
+// to run the current
+// g++ -fopenmp minmaxavg.cpp
+// ./a.out
+
+
 void min_reduction(int arr[], int n) {
   int min_value = INT_MAX;
 #pragma omp parallel for reduction(min : min_value)

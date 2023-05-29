@@ -3,6 +3,10 @@
 #include <queue>
 #include <vector>
 
+// to run the current
+// g++ -fopenmp bfs.cpp
+// ./a.out
+
 void bfs_parallel(const std::vector<std::vector<int>> &graph, int start_node) {
   int num_nodes = graph.size();
   std::vector<bool> visited(num_nodes, false);

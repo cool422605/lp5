@@ -3,6 +3,10 @@
 #include <stdlib.h>
 using namespace std;
 
+// to run the current
+// g++ -fopenmp bubblesort.cpp
+// ./a.out
+
 void bubble(int *, int);
 void swap(int &, int &);
 
